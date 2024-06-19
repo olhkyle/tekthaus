@@ -1,11 +1,11 @@
-import { HTMLAttributes } from 'react';
+import { CSSProperties, HTMLAttributes } from 'react';
 
 interface FlexProps extends HTMLAttributes<HTMLDivElement> {
 	display?: 'flex' | 'inline-flex';
 	direction?: 'row' | 'column';
-	gap?: `${number}px` | `${number}rem`;
-	justifyContent?: 'flex-start' | 'center' | 'space-between' | 'space-around' | 'space-evenly' | 'flex-end';
-	alignItems?: 'flex-start' | 'center' | 'flex-end';
+	gap?: `${string}px` | `${string}rem`;
+	justifyContent?: CSSProperties['justifyContent'];
+	alignItems?: CSSProperties['alignItems'];
 	margin?: string;
 	padding?: string;
 	width?: string;
